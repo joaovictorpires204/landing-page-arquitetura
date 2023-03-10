@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Kanit:wght@100&family=Montserrat+Alternates:wght@300&family=Raleway:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #12625E;
+    --secondary-color: #5C8B89;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    width: 100%;
+    height: 70px;
+}
+
+.header-title {
+    margin-left: 100px;
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 100px;
+    font-family: 'Kanit';
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+}
+
+.menu:hover {
+    transform: scale(1.2);
+}
+
+.banner {
+    background-image: url(banner.png);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.banner-gradient {
+    background: linear-gradient(to right, black, transparent);
+    width: 100%;
+    height: 700px;
+    z-index: 10;
+}
+
+.banner-title {
+    position: absolute;
+    color: white;
+    margin: 0 60px;
+    font-family: 'Montserrat';
+    top: 50%;
+}
+
+.banner-title-one {
+    width: 550px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.banner-title-two {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.content-container {
+    background-color: var(--secondary-color);
+    width: 1000px;
+    height: 3000px;
+    margin: 60px auto;
+    border-radius: 30px;
+}
+
+.content {
+    padding: 60px 23px;
+    color: white;
+}
+
+.content-title {
+    font-size: 30px;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 800;
+}
+
+.bar {
+    background-color: white;
+    width: 50px;
+    height: 4px;
+    margin: 20px auto;
+    border-radius: 80px;
+}
+
+.about-me-content {
+    width: 800px;
+    margin: 10px auto 60px;
+    font-size: 18px;
+    font-family: ' Kanit';
+    font-weight: lighter;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    height: 370px;
+}
+
+.project-content {
+    width: 450px;
+    height: 250px;
+    margin: 30px 0 30px 0;
+    padding: 10px;
+}
+
+.project-2,
+.project-4 {
+    position: relative;
+    left: 2px;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 1rem;
+}
+
+.slider img {
+    flex: 2 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.project-desciption {
+    margin: 10px 0;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}
+
+.project-desciption h2 {
+    margin: 15px 0;
+    font-family: 'Cinzel';
+    font-weight: lighter;
+}
+
+.project-desciption h4 {
+    font-family: 'Kanit';
+    font-weight: bold;
+}
+
+.project-desciption p {
+    font-family: 'Kanit';
+    font-weight: lighter;
+}
+
+.project-add-desciption {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.map-header {
+    margin: 40px 0;
+}
+
+.map-tags {
+    display: flex;
+    justify-content: space-around;
+}
+
+.map-tags img {
+    width: 150px;
+}
+
+.country {
+    position: relative;
+    bottom: 45px;
+    font-family: 20px;
+}
+
+.contact-container {
+    margin: 40px 0;
+}
+
+.footer-menu {
+    margin: 20px 50px;
+    font-size: 20px;
+}
+
+.footer-menu-option {
+    margin-bottom: 10px;
+}
+
+#back-to-top-btn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fa-circle-arrow-up {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.fa-circle-arrow-up:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.contact-display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-formation {
+    text-align: center;
+}
+
+.fa-instagram,
+.fa-envelope,
+.fa-pinterest {
+    color: white;
+    margin: 20px;
+}
+
+.fa-instagram:hover,
+.fa-envelope:hover,
+.fa-pinterest:hover {
+    transform: scale(1.2);
+}
