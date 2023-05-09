@@ -15,12 +15,22 @@
 <body>
     <header id="header">
         <div><a href="#" class="header-title">Vitor Silva</a></div>
-        <div class="header-menu">
+        <div class="header-menu" id="header-menu">
+            <i class="fa-solid fa-ellipsis" id="open" onclick="menuExtend()"></i>
+            <i class="fa-solid fa-ellipsis-vertical" id="close" onclick="closeMenuExtend()"></i>
             <div><a class="menu" href="#about-me">Sobre mim</a></div>
             <div><a class="menu" href="#projects">Projetos</a></div>
             <div><a class="menu" href="#contact">Contato</a></div>
+        </div>   
+    </header>     
+    <div id="menu-mobile">
+        <div id="menu-mobile-content">
+                <div><a class="menu-screen" href="#about-me">Sobre mim</a></div>
+                <div><a class="menu-screen" href="#projects">Projetos</a></div>
+                <div><a class="menu-screen" href="#contact">Contato</a></div>
         </div>
-    </header>
+    </div>
+    </menu>     
     <main>
         <div class="banner">
             <div class="banner-gradient"></div>
@@ -61,7 +71,7 @@
 
                 <div class="projects-container" id="projects">
                     <div class="content-title">Projetos</div>
-                    <div class="bar"></div>
+                    <div class="bar" style="margin-bottom: -40px;"></div>
                     <div class="project-container">
                         <div class="project-content project-1">
                             <div class="slider-wrapper">
@@ -101,7 +111,7 @@
                     </div>
                     <hr id="slide-5 slide-6 slide-7 slide-5,">
                     <div class="project-container">
-                        <div class="project-desciption">
+                        <div class="project-desciption description-mobile">
                             <h2>ORGÂNICO, ELEGÂNCIA E ACONCHEGO</h2>
                             <p>Para este apartamento localizado em um dos bairros mais nobres da cidade
                                 mineira, o
@@ -122,7 +132,7 @@
                             </p>
                         </div>
                         <div class="project-content project-2">
-                            <div class="slider-wrapper">
+                            <div class="slider-wrapper slider-mobile">
                                 <div class="slider">
                                     <img id="slide-5" src="./styles/images/PROJETO 02/Augusto_SalaCozinha_05.png"
                                         alt="">
@@ -191,7 +201,7 @@
                     </div>
                     <hr>
                     <div class="project-container">
-                        <div class="project-desciption">
+                        <div class="project-desciption description-mobile">
                             <h2>GOURMET, MODERNO E SPA</h2>
                             <p>A reforma desse espaço de lazer, que fica localizado em terras mineiras foi
                                 pensada em
@@ -211,7 +221,7 @@
                             </p>
                         </div>
                         <div class="project-content project-4">
-                            <div class="slider-wrapper">
+                            <div class="slider-wrapper slider-mobile">
                                 <div class="slider">
                                     <img id="slide-15" src="./styles/images/PROJETO 04/Janaina_Gourmet_10.jpg" alt="">
                                     <img id="slide-16" src="./styles/images/PROJETO 04/Janaina_Gourmet_06.jpg" alt="">

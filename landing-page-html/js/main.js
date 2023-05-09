@@ -14,3 +14,16 @@ function scrollToTop() {
         behavior: "smooth",
     });
 }
+
+
+const menuExtend = () => { 
+    document.getElementById("menu-mobile").style.display = 'block'
+    document.querySelector('.fa-ellipsis').style.visibility = 'hidden'
+    document.querySelector('.fa-ellipsis-vertical').style.visibility = 'visible'
+}
+
+const closeMenuExtend = () => { 
+    document.getElementById("menu-mobile").style.display = 'none'
+    document.querySelector('.fa-ellipsis-vertical').style.visibility = 'hidden'
+    document.querySelector('.fa-ellipsis').style.visibility = 'visible'
+}
